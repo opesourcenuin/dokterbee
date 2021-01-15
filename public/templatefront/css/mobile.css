@@ -1,0 +1,477 @@
+@media (max-width: 992px) {
+    /* scrollbar */
+    .element,
+    html {
+        scrollbar-width: none
+    }
+    html::-webkit-scrollbar,
+    .element::-webkit-scrollbar {
+        display: none
+    }
+    /* sett body */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        margin: 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    /* .col {
+        padding-right: 0;
+        padding-left: 0;
+    } */
+    /* bottom bar */
+    .tab-container {
+        background: white;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        box-shadow: 0 5px 10px rgb(207, 131, 131);
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    /* style bg menu */
+    .tab-container a {
+        text-decoration: none;
+        color: rgb(58, 50, 36);
+    }
+    .tab {
+        background: white;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        margin: 0 10px;
+        transition: background 0.1s linear;
+    }
+    /* text hiden */
+    .tab p {
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 0;
+    }
+    /* text aktiv */
+    .tab.active p {
+        font-size: 10px;
+        margin: auto 5px;
+        max-width: 200px;
+        transition: max-width 0.4s linear;
+        color: white;
+    }
+    /* background menu */
+    .tab.active.purple {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.pink {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.yellow {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    .tab.active.teal {
+        background: rgba(16, 149, 190, 0.76);
+        color: white;
+    }
+    /* bg navbar top */
+    #head-top .top-container {
+        background: white;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    /* playground */
+    #playground {
+        margin-top: 90px;
+        font-family: 'roboto';
+    }
+    #playground .head p {
+        font-weight: lighter;
+        line-height: 22px;
+        font-size: 23px;
+        color: #000;
+    }
+    #playground span {
+        color: #42AEDC;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    #playground a {
+        text-decoration: none;
+    }
+    /* banner */
+    /* category */
+    #playground .head-title p {
+        color: #000;
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: -0.8rem;
+    }
+    /* search box */
+    #playground .search-box {
+        margin-top: -1rem;
+    }
+    #playground input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #playground input::placeholder {
+        color: #42AEDC;
+    }
+    #playground input[placeholder] {
+        font-family: 'roboto';
+        color: #42AEDC;
+        font-size: 12px;
+    }
+    #playground .bg-cat {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+    }
+    #playground p {
+        font-size: 12px;
+        color: #42AEDC;
+        font-family: 'Rachana';
+        margin-top: 10px;
+    }
+    /* rekomendasi */
+    #playground .rekomendasi .left p,
+    #playground .terbaru .left p {
+        color: #000;
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    #playground .rekomendasi .right p,
+    #playground .terbaru .right p {
+        font-size: 13px;
+    }
+    #playground .rekomendasi .card,
+    #playground .terbaru .card {
+        border: none;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    }
+    #playground .rekomendasi .desc,
+    #playground .terbaru .desc {
+        padding: 5px;
+    }
+    #playground .rekomendasi .card h6,
+    #playground .terbaru .card h6 {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #42AEDC;
+    }
+    #playground .rekomendasi .product-rekomendasi .card h1,
+    #playground .terbaru .product-rekomendasi .card h1 {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #000000;
+        font-weight: bold;
+    }
+    #playground .rekomendasi .card p,
+    #playground .terbaru .card p {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 11px;
+        color: #000000;
+    }
+    /* rekomendasi slider product */
+    #playground .rekomendasi .product-rekomendasi,
+    #playground .terbaru .product-rekomendasi {
+        width: 100%;
+        height: auto;
+        border: 1px solid #fff;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #playground .rekomendasi .product-rekomendasi::-webkit-scrollbar,
+    #playground .terbaru .product-rekomendasi::-webkit-scrollbar {
+        width: 0;
+    }
+    #playground .rekomendasi .product-rekomendasi .card,
+    #playground .terbaru .product-rekomendasi .card {
+        min-width: 90px;
+        height: auto;
+        background: white;
+        margin-right: 7px;
+        margin-bottom: 20px;
+    }
+    #playground .terbaru .product-rekomendasi {
+        margin-bottom: 80px;
+    }
+    /* HALAMAN TAB TRANSAKSI */
+    #head-transaction .top-container {
+        width: 100%;
+        height: 190px;
+        padding-top: 20px;
+        background: #42AEDC;
+        border-radius: 0px 0px 25px 25px;
+    }
+    #head-transaction .top-container h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+    }
+    #head-transaction .top-container p {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+    }
+    /* search box head-transaction */
+    #head-transaction .search-box {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #head-transaction input[type=text] {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #head-transaction input::placeholder {
+        color: #42AEDC;
+    }
+    #head-transaction input[placeholder] {
+        font-family: 'roboto';
+        color: #42AEDC;
+        font-size: 12px;
+    }
+    /* tabs transaction */
+    #head-transaction .top-container .tabs {
+        color: #FFFFFF;
+        border-radius: .3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #head-transaction .tabs input {
+        display: none;
+    }
+    #head-transaction .tabs label {
+        flex: 1;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 2.5rem;
+        font-size: 14px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color .2s ease, box-shadow .2s ease;
+    }
+    #head-transaction .tabs input:checked+label {
+        box-shadow: inset 0 -.2rem #ffffff;
+    }
+    #head-transaction .container {
+        /* margin-top: 80px; */
+        display: flex;
+        overflow: hidden;
+        color: black;
+    }
+    #head-transaction .tabs .content {
+        flex: 0 0 20rem;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        transition: transform .5s ease;
+    }
+    #head-transaction .tabs input:nth-of-type(2):checked~.container .content {
+        transform: translateX(-100%);
+    }
+    #head-transaction .tabs input:nth-of-type(3):checked~.container .content {
+        transform: translateX(-200%);
+    }
+    #head-transaction .tabs input:nth-of-type(4):checked~.container .content {
+        transform: translateX(-200%);
+    }
+    #head-transaction .tabs .container .tagihan {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+    #head-transaction .tabs .container .tagihan,
+    #head-transaction .tabs .container .penyewaan,
+    #head-transaction .tabs .container .riwayat {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        color: black;
+        padding: 5px 10px 10px 5px;
+    }
+    #head-transaction .tabs .container .tagihan .img-transactions,
+    #head-transaction .tabs .container .penyewaan .img-transactions,
+    #head-transaction .tabs .container .riwayat .img-transactions {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #head-transaction .tabs .container .tagihan h1,
+    #head-transaction .tabs .container .penyewaan h1,
+    #head-transaction .tabs .container .riwayat h1 {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+        margin-top: 5px;
+    }
+    #head-transaction .tabs .container .tagihan p,
+    #head-transaction .tabs .container .penyewaan p,
+    #head-transaction .tabs .container .riwayat p {
+        color: #42AEDC;
+        font-size: 10px;
+        line-height: 13px;
+        margin-bottom: 0;
+    }
+    #head-transaction .tabs .container .col {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #head-transaction .tabs .container .penyewaan h2 {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 11px;
+        color: #000000;
+    }
+    /*  */
+    /* HALAMAN  TAB ADD SEWA */
+    #add-sewa h1 {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 25px;
+        color: #000000;
+        margin-top: 25px;
+    }
+    /* HALAMAN LIST PRODUCT */
+    #pilih-barang .list-product {
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+    #pilih-barang h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #pilih-barang .category h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #71C2E5;
+    }
+    #pilih-barang .search-box {
+        margin-top: -1rem;
+    }
+    #pilih-barang input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        border: none;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #pilih-barang input::placeholder {
+        color: #42AEDC;
+    }
+    #pilih-barang input[placeholder] {
+        font-family: 'roboto';
+        color: #42AEDC;
+        font-size: 12px;
+    }
+    #body-barang {
+        margin-top: 55%;
+    }
+    #body-barang .card h1 {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+        margin-top: 5px;
+    }
+    #body-barang .card p {
+        color: #42AEDC;
+        font-size: 10px;
+        line-height: 13px;
+        margin-bottom: 0;
+    }
+    #body-barang .card .desc h6 {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #42AEDC;
+    }
+    #body-barang .card {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #body-barang .card .desc {
+        padding: 10px;
+    }
+}
